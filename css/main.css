@@ -13,7 +13,7 @@ h1 {
   font-size: 46px;
   color: #4d4d4d;
   margin: 20px 0 14px;
-  
+  display: inline-block;
 }
 
 h3 {
@@ -178,10 +178,8 @@ body {
   padding: 120px 190px;
   text-align: center;
 }
-.services h1{
-  display: inline-block;
-}
-.services hr{
+
+h1 hr{
   margin-left:33%;
   margin-bottom: 20px;
 }
@@ -201,4 +199,24 @@ body {
   height: 83px;
   width: 89px;
   text-align: center;
+}
+/*  */
+.skills{
+  padding: 120px 190px;
+  text-align: center;
+}
+.skills h1{
+  display: inline-block;
+}
+.adobe__icons{
+  visibility: hidden;
+}
+/* portfolio */
+.portfolio{
+  padding: 120px 190px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.portfolio__works{
+  display: flex;
 }
