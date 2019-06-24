@@ -115,12 +115,12 @@
   <!-- contact -->
   <div class="contact" id="contact">
     <h1><hr>TESTIMONIALS</h1>
-    <div class="ceo__slider">
-      <div class="thinkers">
+    <div class="ceo__carousel">
+      <div id="thinkers">
         <div class="thinker">
-          <img src="/images/thinker2.jpg" alt="thinker2">
+          <img src="/images/thinker1.jpg" alt="thinker1">
           <div class="thinker__info">
-            <h4>LIMARA TUSI</h4>
+            <h4>Nicole Anishon</h4>
             <span class="spec">ceo,random company</span>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Earum, eum ipsam numquam ut error aliquam dolor consequatur
@@ -131,7 +131,7 @@
         <div class="thinker">
           <img src="/images/thinker2.jpg" alt="thinker2">
           <div class="thinker__info">
-            <h4>LIMARA TUSI</h4>
+            <h4>Limara Tusi</h4>
             <span class="spec">ceo,random company</span>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Earum, eum ipsam numquam ut error aliquam dolor consequatur
@@ -140,9 +140,9 @@
           </div>
         </div>
         <div class="thinker">
-          <img src="/images/thinker2.jpg" alt="thinker2">
+          <img src="/images/thinker3.jpg" alt="thinker3">
           <div class="thinker__info">
-            <h4>LIMARA TUSI</h4>
+            <h4>Condra Rust</h4>
             <span class="spec">ceo,random company</span>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Earum, eum ipsam numquam ut error aliquam dolor consequatur
@@ -151,8 +151,16 @@
           </div>
         </div>
       </div>
+      <div class="ceo__buttons">
+        <input type="radio" name="ceo__b" id='ceo_b1' data-pos='0vw' onclick="shift_c()">
+        <label for="ceo_b1"></label>
+        <input type="radio" name="ceo__b" id='ceo_b2' data-pos='-72vw'onclick="shift_c()" checked>
+        <label for="ceo_b2"></label>
+        <input type="radio" name="ceo__b" id='ceo_b3' data-pos='-144vw'onclick="shift_c()"> 
+        <label for="ceo_b3"></label>
+      </div>
     </div>
   </div>
 </body>
-
+<script src="/js/main.js"></script>
 </html>
