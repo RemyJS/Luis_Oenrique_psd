@@ -257,7 +257,7 @@ body {
   opacity: 1;
 }
 /* contact */
-.contact{
+.testimonials{
   padding: 120px 7%;
   background-color: #fff;
   /* text-align: center; */
@@ -318,4 +318,36 @@ body {
 }
 .ceo__buttons input:checked+label{
   background-color: black;
+}
+/* result */
+.result{
+  background-color: #f6f6f6;
+  padding: 0 7%;
+}
+.result__ul{
+  font-size: 22px;
+  font-family: "Asap";
+  color: rgba(33, 33, 33, 0.902);
+  text-transform: uppercase;
+  line-height: 1.455;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0;
+  margin-bottom: 155px;
+}
+.result__ul > li * {
+  display: block;
+}
+.result__ul img {
+  height: 100px;
+  margin: 0 auto 30px;
+}
+/* contact */
+.contact{
+  background: url(/images/banner-2.jpg)no-repeat;
+  background-size: cover;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.69);
+  background-blend-mode: darken;
 }
