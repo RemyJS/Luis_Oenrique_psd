@@ -14,6 +14,9 @@ h1 {
   color: #4d4d4d;
   margin: 20px 0 14px;
   text-align: center;
+  letter-spacing: 8px;
+  line-height: 1.065;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -45,7 +48,7 @@ body {
 
 .home {
   background: url(/images/bg-element-.png) repeat-x;
-  height: 750px;
+  /* height: 750px; */
   padding: 0 7%;
 }
 
@@ -113,6 +116,7 @@ body {
 .profile__info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .profile__name h1 {
@@ -150,14 +154,17 @@ body {
   box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
   width: 160px;
   height: 50px;
+  margin-bottom: -2px;
 }
 
 .profile__img {
-  margin-left: 20%;
   margin-top: 34px;
 }
+.profile__img img{
+  height: 32vw;
+}
 
-/*  */
+/* about */
 .about__me {
   padding: 100px 7% 130px;
   display: flex;
@@ -315,6 +322,7 @@ body {
   height: 13px;
   width: 13px; 
   display:inline-block;
+  cursor: pointer;
 }
 .ceo__buttons input:checked+label{
   background-color: black;
@@ -347,7 +355,76 @@ body {
 .contact{
   background: url(/images/banner-2.jpg)no-repeat;
   background-size: cover;
-  height: 700px;
   background-color: rgba(0, 0, 0, 0.69);
   background-blend-mode: darken;
+  padding: 0 7%;
+}
+.contact h1{
+    color: rgba(255, 255, 255, 0.902);
+    padding-top: 146px;
+}
+.contact h1 hr {
+  background-color: #c1c1c1;
+}
+.contact form {
+  margin: 0 14%;
+  text-align: center;
+}
+.name__email{
+  height: 61px;
+  width: 371px;
+  margin: 0 15px;
+}
+#hello__message{
+  height: 210px;
+  width: 778px;
+  margin: 30px 15px;
+  display: inline;
+  resize: none;
+}
+#s_but{
+  font-size: 16px;
+  font-family: "Asap";
+  color: rgb(77, 77, 77);
+  background-color: #fff;
+}
+#s_but img{
+  height: 12px;
+}
+.arrow__up{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 41px;
+    display: inline-block;
+    color: #4d4d4d;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    position: relative;
+    float: right;
+    left: 67px;
+    bottom: 42px;
+}
+
+footer{
+  border-top: 1px solid white;
+  color:white;
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 4.188;
+  letter-spacing: 1px;
+  margin-top: 60px;
+}
+.social{
+  display: inline-block;
+  float: left;
+  position: absolute;
+}
+.social img{
+  height: 27px;
+}
+.coop{
+  display: block;
+  text-align: center;
 }
