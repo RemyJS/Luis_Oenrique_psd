@@ -44,10 +44,11 @@ li {
 body {
   font-family: 'Asap', sans-serif;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 .home {
-  background: url(/images/bg-element-.png) repeat-x;
+  background: url(../images/bg-element-.png) repeat-x;
   /* height: 750px; */
   padding: 0 7%;
 }
@@ -56,6 +57,7 @@ body {
   display: flex;
   padding-top: 30px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -76,7 +78,6 @@ body {
 
 /*  */
 .nav__menu {
-  margin-left: 50%;
   font-family: 'asap';
   font-size: 16;
   font-weight: 500;
@@ -116,7 +117,7 @@ body {
 .profile__info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .profile__name h1 {
@@ -171,9 +172,10 @@ body {
   justify-content: center;
   color: #4d4d4d;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .about__info{
-  margin-right: 20%;
+  margin-bottom: 5vh;
 }
 
 .about__info p{
@@ -184,24 +186,26 @@ body {
   height: 121px;
   margin-bottom: 40px;
 }
+.about__img img{
+  width: 571px;
+}
 .services{
   background-color: #f6f6f6;
   padding: 120px 7%;
   text-align: center;
 }
 
-
 .services__icons{
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .services__icons>div{
   width: 200px;
-  padding:3% 10% 0;
+  /* padding:3% 10% 0; */
 }
 .icons__serv{
   height: 83px;
@@ -222,6 +226,7 @@ body {
   padding: 120px 7%;
   text-align: center;
   background-color: #f6f6f6;
+  scroll-behavior: smooth;
 }
 .portfolio__works{
   display: flex;
@@ -353,7 +358,7 @@ body {
 }
 /* contact */
 .contact{
-  background: url(/images/banner-2.jpg)no-repeat;
+  background: url(../images/banner-2.jpg)no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.69);
   background-blend-mode: darken;
@@ -368,20 +373,67 @@ body {
 }
 .contact form {
   margin: 0 14%;
-  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .name__email{
   height: 61px;
   width: 371px;
-  margin: 0 15px;
+  margin: 7px 15px;
 }
 #hello__message{
   height: 210px;
   width: 778px;
   margin: 30px 15px;
-  display: inline;
+  /* display: inline; */
   resize: none;
 }
+/* popUp messege */
+.popupmsg{
+  border: 2px solid #212121;
+  border-radius: 37px;
+  width: 350px;
+  height: auto;
+  padding: 30px 2px;
+  background-color: #0000004f;
+  position: relative;
+  left: 30vw;
+  color: #f6f6f6;
+}
+.p__text{
+  font-style: italic;
+  padding: 10px 0;
+}
+.popupcontent{
+  border-radius: 20px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+.namemail{
+  margin-bottom: 3px;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+.close{
+  position: absolute;
+  left: 85%;
+  top: 0%;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+
 #s_but{
   font-size: 16px;
   font-family: "Asap";
@@ -418,7 +470,6 @@ footer{
 }
 .social{
   display: inline-block;
-  float: left;
   position: absolute;
 }
 .social img{
@@ -427,4 +478,21 @@ footer{
 .coop{
   display: block;
   text-align: center;
+}
+/*  */
+@media(max-width:1320px){
+  .profile__name{
+    background-image: url("../images/img-face.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center top;
+    padding-bottom: 9vh;
+    text-align: center;
+}
+  .profile__name h1 {
+    margin-top:11vh;
+  }
+  .profile__img{
+    display: none;
+  }
 }
