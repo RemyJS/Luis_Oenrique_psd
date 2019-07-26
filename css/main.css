@@ -454,8 +454,8 @@ body {
     font-size: 24px;
     line-height: 36px;
     position: relative;
-    float: right;
-    left: 67px;
+    /* float: right; */
+    left: 100%;
     bottom: 42px;
 }
 
@@ -484,6 +484,7 @@ footer{
   .profile__name{
     background-image: url("../images/img-face.png");
     background-repeat: no-repeat;
+    background-size: contain;
     text-align: center;
     background-position: center top;
     padding-bottom: 9vh;
@@ -494,5 +495,55 @@ footer{
   }
   .profile__img{
     display: none;
+  }
+  .ceo__carousel{
+    height: auto;
+  }
+  .thinker{
+    height: auto;
+  }
+  .ceo__buttons{
+    margin-top: 5vh;
+  }
+  .thinker{
+    margin-top: 2vh;
+  }
+  .name__email__div{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media(max-width: 1150px){
+  .graph img {
+    display: none;
+  }
+  .graph{
+    background: url(/images/graph.png) no-repeat;
+    background-size: contain;
+    height: 422px;
+  }
+}
+@media(max-width: 813px){
+  .name__email{
+    width: 100%;
+    margin: 0;
+  }
+  .name__email__div{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #hello__message{
+    width: 100%;
+  }
+  .popupmsg{
+    max-width: 315px;
+    width: auto;
+  }
+  footer{
+    line-height: 2.188;
+  }
+  .social{
+    position: relative;
   }
 }
